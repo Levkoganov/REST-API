@@ -2,7 +2,7 @@ const jwt = require('../config/jwt');
 
 const login = async (req, res) => {
   try {
-    // Hardcode Username and Password in params
+    // Hardcode Username and Password in params. (example:?username=test&password=123)
     const { username, password } = req.query;
     const user = {
       username,
